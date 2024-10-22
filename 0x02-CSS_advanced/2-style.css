@@ -1,0 +1,33 @@
+html {
+	/* scroll behavior with timing */
+	scroll-behavior: smooth;
+}
+
+body {
+	/* foreground color text*/
+	color: #161616;
+}
+
+/* anchor elements */
+a {
+	/* color text */
+	color: #161616;
+}
+
+/* class visually-hidden */
+.visually-hidden {
+	/* hide element */
+	display: none;
+}
+
+/* class card-category */
+.card-category {
+	/* color text */
+	color: #D73953;
+}
+
+/* class section-tagline*/
+.section-tagline {
+	/* color text */
+	color: #D73953;
+}

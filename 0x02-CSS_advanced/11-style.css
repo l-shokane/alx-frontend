@@ -1,0 +1,96 @@
+html {
+	/* sets scroll behavior with timing */
+	scroll-behavior: smooth;
+	/* sets font size */
+	font-size: 62.5%;
+}
+
+/* root element */
+:root {
+	/*  specific colors */
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	/* specific font families*/
+	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* font-size custom properties*/
+	--font-size-small: 1.2rem;
+	--font-size-medium: 1.6rem;
+	--font-size-large: 1.8rem;
+	--font-size-x-large: 2.3rem;
+	--font-size-xx-large: 4.8rem;
+	/* font-weight custom properties */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	/* line-height custom properties */
+	--line-height-small: 1.2;
+	--line-height-base: 1.5;
+	--line-height-big: 1.8;
+	/*  header-align custom properties */
+	--section-header-align: center;
+	/* change the letters to uppercase */
+	--section-tagline-transform: uppercase;
+}
+
+body {
+	/* sets foreground color text*/
+	color: var(--text-color);
+	/* sets font family */
+	font-family: var(--font-family-base);
+	/* sets font size */
+	font-size: var(--font-size-medium);
+	/* sets font-weight */
+	font-weight: var(--font-weight-regular);
+	/* sets line-height */
+	line-height: var(--line-height-base);
+}
+
+/* title elements */
+h1, h2, h3, h4, h5, h6 {
+	/* sets font family */
+	font-family: var(--font-family-title);
+	/* sets font weight */
+	font-weight: var(--font-weight-bold);
+}
+
+/* anchor elements */
+a {
+	/* text color */
+	color: var(--text-color);
+	/* sets decoration in anchor element */
+	text-decoration: none;
+}
+
+/*  class visually-hidden */
+.visually-hidden {
+	/* hides element */
+	display: none;
+}
+
+/* class card-category */
+.card-category {
+	/* text color */
+	color: var(--color-primary);
+}
+
+/* class section-header */
+.section-header {
+	/* horizontal align */
+	text-align: var(--section-header-align);
+}
+
+/* class section-tagline*/
+.section-tagline {
+	/* text color */
+	color: var(--color-primary);
+	/* sets font style  */
+	font-family: var(--font-family-title);
+	/* sets text to uppercase */
+	text-transform: var(--section-tagline-transform);
+	/* sets font weight */
+	font-weight: var(--font-weight-bold);
+}
