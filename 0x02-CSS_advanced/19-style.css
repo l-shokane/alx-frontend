@@ -1,16 +1,16 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 /*# sourceMappingURL=normalize.min.css.map */
 
-/* in all element */
+/*  all element  */
 *, *:before, *:after {
-	/*  Defines how the width and height of the element. */
+	/*  Defines how the width and height of the element are calculated.*/
 	box-sizing: border-box;
 }
 
 html {
-	/* set scroll behavior with timing */
+	/* sets scroll behavior with timing */
 	scroll-behavior: smooth;
-	/* font size (letter size) */
+	/* font size  */
 	font-size: 62.5%;
 }
 
@@ -39,13 +39,13 @@ html {
 	--line-height-small: 1.2;
 	--line-height-base: 1.5;
 	--line-height-big: 1.8;
-	/*  header-align custom properties */
+	/* define variable to header-aling custom properties */
 	--section-header-align: center;
-	/* change the letters to uppercase */
+	/* change letters to uppercase */
 	--section-tagline-transform: uppercase;
-	/* change the margin in titles*/
+	/* change  margin in titles*/
 	--section-title-margin: 0;
-	/* change the color in titles*/
+	/* change color in titles*/
 	--section-title-color: var(--color-black);
 	/* padding custom properties */
 	--section-padding: 5rem 0;
@@ -54,26 +54,36 @@ html {
 	--section-footer-padding: 3rem 0 0;
 	--section-footer-align: center;
 	--footer-padding: 5rem 0 1rem;
+	/* font-family, weight, size, spacing, margin, link, display nav items */
+	--nav-item-font-family: var(--font-family-title);
+	--nav-item-font-weight: var(--font-weight-bold);
+	--nav-item-font-size: var(--font-size-medium);
+	--nav-item-letter-spacing: 0.04rem;
+	--nav-item-display: inline-block;
+	--nav-item-margin: 0 0 3rem 0;
+	--nav-item-link-hover: var(--color-primary);
+	/* margin in section tags line */
+	--section-tagline-margin: 0;
 }
 
 body {
-	/* foreground color text*/
+	/* sets foreground text color*/
 	color: var(--text-color);
 	/* font family */
 	font-family: var(--font-family-base);
-	/* font size */
+	/* font size  */
 	font-size: var(--font-size-medium);
-	/* font-weight */
+	/*  font-weight */
 	font-weight: var(--font-weight-regular);
-	/* line-height */
+	/*  line-height  */
 	line-height: var(--line-height-base);
 }
 
-/* title elements */
+/*  title elements */
 h1, h2, h3, h4, h5, h6 {
-	/* font family */
+	/* sets font family */
 	font-family: var(--font-family-title);
-	/* font weight */
+	/* sets font weight*/
 	font-weight: var(--font-weight-bold);
 }
 
@@ -81,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 a:link {
 	/* color text */
 	color: var(--text-color);
-	/* sets decoration in anchor element */
+	/* sets decoration */
 	text-decoration: none;
 }
 
@@ -93,19 +103,19 @@ a:visited {
 
 /* anchor elements */
 a:hover {
-	/* sets the decortation */
+	/* sets decortation  */
 	text-decoration: underline;
 }
 
-/* anchor elements.*/
+/* anchor elements */
 a:active {
-	/*  background color */
+	/* sets background color */
 	background-color: var(--color-light-grey);
 }
 
 /* class visually-hidden */
 .visually-hidden {
-	/* hides element */
+	/* hide element */
 	display: none;
 }
 
@@ -117,21 +127,21 @@ a:active {
 
 /* class section */
 .section {
-	/* set the padding and the margin */
+	/* sets padding and margin */
 	padding: var(--section-padding);
 }
 
 /* class section-header */
 .section-header {
-	/* horizontal align */
+	/*  horizontal align */
 	text-align: var(--section-header-align);
-	/* set the padding and the margin */
+	/* sets padding and margin*/
 	padding: var(--section-header-padding);
 }
 
-/* class section-body */
+/*  class section-body */
 .section-body {
-	/* set the padding and the margin  */
+	/* sets padding and margin */
 	padding: var(--section-body-padding);
 }
 
@@ -147,19 +157,19 @@ a:active {
 .section-title {
 	/* font style */
 	font-family: var(--font-family-title);
-	/* font size */
+	/* sets letter size */
 	font-size: var(--font-size-xx-large);
-	/* font weight */
+	/* sets font weight */
 	font-weight: var(--font-weight-bold);
 	/* sets margin */
 	margin: var(--section-title-margin);
-	/* text color */
+	/*  text color */
 	color: var(--section-title-color);
 }
 
-/* class section-tagline*/
+/*  class section-tagline*/
 .section-tagline {
-	/* text color */
+	/*  text color */
 	color: var(--color-primary);
 	/* font style  */
 	font-family: var(--font-family-title);
@@ -167,20 +177,116 @@ a:active {
 	text-transform: var(--section-tagline-transform);
 	/* font weight */
 	font-weight: var(--font-weight-bold);
+	/* sets margin */
+	margin: var(--section-tagline-margin);
 }
 
-/* all elements with class container */
+/* class container */
 .container {
 	/* sets width */
 	width: 960px;
-	/* margin in left */
+	/* margin in left side  */
 	margin-left: auto;
-	/* margin in right  */
+	/* margin in right side  */
 	margin-right: auto;
 }
 
-/* class footer */
+/*  class footer */
 .footer {
 	/*  class section-footer */
 	padding: var(--footer-padding);
+}
+
+/* class navbar-menu */
+.navbar-menu {
+	/* push the elements  */
+	float: right;
+}
+
+/* all elements in class nav */
+.nav {
+	/* sets margin */
+	margin: 0;
+	/* sets padding */
+	padding: 0;
+	/* list without style */
+	list-style: none;
+	/* set text align*/
+	text-align: center;
+}
+
+/* all elements in class nav */
+.nav .nav-item {
+	/* font style */
+	font-family: var(--nav-item-font-family);
+	/* font weight */
+	font-weight: var(--nav-item-font-weight);
+	/* sets font size */
+	font-size: var(--nav-item-font-size);
+	/* sets spacing in the letter */
+	letter-spacing: var(--nav-item-letter-spacing);
+	/* sets display */
+	display: var(--nav-item-display);
+	/* sets margin */
+	margin: var(--nav-item-margin);
+}
+
+/* all elements in class nav */
+.nav .nav-link {
+	/* sets  display */
+	display: block;
+	/* sets padding  */
+	padding: 0.5rem 1rem;
+}
+
+/* all elements in clas nav */
+.nav .nav-link:hover {
+	/* text color */
+	color: var(--nav-item-link-hover);
+}
+
+/* class row */
+ul.row {
+	/* sets margin */
+	margin: 0;
+	/* sets padding*/
+	padding: 0;
+    /* list without style */
+	list-style: none;
+}
+
+/* class col-1-3 */
+.col-1-3 {
+	/* sets width */
+	width: 33.33%;
+	/* set float content */
+	float: left;
+	/* sets  padding */
+	padding: 0.5rem;
+}
+
+/*  class col-1-2 */
+.col-1-2 {
+	/* sets width*/
+	width: 50%;
+	/* set float content */
+	float: left;
+	/* sets padding in all sides. */
+	padding: 0.5rem;
+}
+
+/* class footer-copyright */
+.footer-copyright {
+	/* sets margin all sides */
+	margin: 0;
+	/* font size */
+	font-size: var(--font-size-small);
+	/* text color */
+	color: var(--text-color);
+}
+
+/* class footer inside ul tag */
+.footer ul {
+	/* sets text align  */
+	text-align: right;
 }

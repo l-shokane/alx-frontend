@@ -3,20 +3,20 @@
 
 /* in all element */
 *, *:before, *:after {
-	/*  Defines how the width and height of the element. */
+	/*  Defines how the width and height of the element are calculated. */
 	box-sizing: border-box;
 }
 
 html {
-	/* set scroll behavior with timing */
+	/* sets scroll behavior with timing */
 	scroll-behavior: smooth;
-	/* font size (letter size) */
+	/* font size*/
 	font-size: 62.5%;
 }
 
-/* root element */
+/*  root element */
 :root {
-	/* specific colors */
+	/* with specific colors */
 	--color-primary: #d73953;
 	--color-black: #090909;
 	--color-white: #ffffff;
@@ -39,7 +39,7 @@ html {
 	--line-height-small: 1.2;
 	--line-height-base: 1.5;
 	--line-height-big: 1.8;
-	/*  header-align custom properties */
+	/* header-align custom properties */
 	--section-header-align: center;
 	/* change the letters to uppercase */
 	--section-tagline-transform: uppercase;
@@ -47,17 +47,25 @@ html {
 	--section-title-margin: 0;
 	/* change the color in titles*/
 	--section-title-color: var(--color-black);
-	/* padding custom properties */
+	/*  padding custom properties */
 	--section-padding: 5rem 0;
 	--section-header-padding: 0 0 3rem;
 	--section-body-padding: 0 0 3rem;
 	--section-footer-padding: 3rem 0 0;
 	--section-footer-align: center;
 	--footer-padding: 5rem 0 1rem;
+	/*  font-family, weight, size, spacing, margin, link, display nav items */
+	--nav-item-font-family: var(--font-family-title);
+	--nav-item-font-weight: var(--font-weight-bold);
+	--nav-item-font-size: var(--font-size-medium);
+	--nav-item-letter-spacing: 0.04rem;
+	--nav-item-display: inline-block;
+	--nav-item-margin: 0 0 3rem 0;
+	--nav-item-link-hover: var(--color-primary);
 }
 
 body {
-	/* foreground color text*/
+	/* sets foreground text color*/
 	color: var(--text-color);
 	/* font family */
 	font-family: var(--font-family-base);
@@ -65,13 +73,13 @@ body {
 	font-size: var(--font-size-medium);
 	/* font-weight */
 	font-weight: var(--font-weight-regular);
-	/* line-height */
+	/* sets line-height */
 	line-height: var(--line-height-base);
 }
 
 /* title elements */
 h1, h2, h3, h4, h5, h6 {
-	/* font family */
+	/* font family*/
 	font-family: var(--font-family-title);
 	/* font weight */
 	font-weight: var(--font-weight-bold);
@@ -79,13 +87,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* anchor elements */
 a:link {
-	/* color text */
+	/* text color */
 	color: var(--text-color);
-	/* sets decoration in anchor element */
+	/* sets decoration */
 	text-decoration: none;
 }
 
-/* anchor elements */
+/* anchor elements  */
 a:visited {
 	/* font style */
 	font-style: italic;
@@ -93,13 +101,13 @@ a:visited {
 
 /* anchor elements */
 a:hover {
-	/* sets the decortation */
+	/* sets decortation */
 	text-decoration: underline;
 }
 
-/* anchor elements.*/
+/* anchor elements */
 a:active {
-	/*  background color */
+	/* sets background color */
 	background-color: var(--color-light-grey);
 }
 
@@ -115,9 +123,9 @@ a:active {
 	color: var(--color-primary);
 }
 
-/* class section */
+/*  class section */
 .section {
-	/* set the padding and the margin */
+	/* set padding and margin.  */
 	padding: var(--section-padding);
 }
 
@@ -125,13 +133,13 @@ a:active {
 .section-header {
 	/* horizontal align */
 	text-align: var(--section-header-align);
-	/* set the padding and the margin */
+	/* set padding and margin. */
 	padding: var(--section-header-padding);
 }
 
-/* class section-body */
+/*  class section-body */
 .section-body {
-	/* set the padding and the margin  */
+	/* set padding and margin.*/
 	padding: var(--section-body-padding);
 }
 
@@ -139,7 +147,7 @@ a:active {
 .section-footer {
 	/* class section-footer */
 	padding: var(--section-footer-padding);
-	/* horizontal align */
+	/* sets horizontal align */
 	text-align: var(--section-footer-align);
 }
 
@@ -163,24 +171,72 @@ a:active {
 	color: var(--color-primary);
 	/* font style  */
 	font-family: var(--font-family-title);
-	/* sets text to uppercase */
+	/* text to uppercase */
 	text-transform: var(--section-tagline-transform);
 	/* font weight */
 	font-weight: var(--font-weight-bold);
 }
 
-/* all elements with class container */
+/* class container */
 .container {
 	/* sets width */
 	width: 960px;
-	/* margin in left */
+	/* margin in left side */
 	margin-left: auto;
-	/* margin in right  */
+	/* margin in right side */
 	margin-right: auto;
 }
 
-/* class footer */
+/* all elements with class footer */
 .footer {
-	/*  class section-footer */
+	/* all elements with class section-footer */
 	padding: var(--footer-padding);
+}
+
+/* all elements with class navbar-menu */
+.navbar-menu {
+	/* push the elements to the right  */
+	float: right;
+}
+
+/* all elements in class */
+.nav {
+	/* sets margin */
+	margin: 0;
+	/* sets padding */
+	padding: 0;
+	/* list without style */
+	list-style: none;
+	/* align text center*/
+	text-align: center;
+}
+
+/* all elements */
+.nav .nav-item {
+	/* font family */
+	font-family: var(--nav-item-font-family);
+	/* font weight */
+	font-weight: var(--nav-item-font-weight);
+	/* font size */
+	font-size: var(--nav-item-font-size);
+	/* sets spacing between letters */
+	letter-spacing: var(--nav-item-letter-spacing);
+	/* sets display */
+	display: var(--nav-item-display);
+	/* sets margin all sides */
+	margin: var(--nav-item-margin);
+}
+
+/* all elements */
+.nav .nav-link {
+	/* sets display */
+	display: block;
+	/* sets padding */
+	padding: 0.5rem 1rem;
+}
+
+/* all elements with class nav-link */
+.nav .nav-link:hover {
+	/* text color */
+	color: var(--nav-item-link-hover);
 }
